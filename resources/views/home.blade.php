@@ -111,6 +111,11 @@ button.viewallsale:hover{
     padding: 8px;
     text-align: center;
 }
+
+
+.row.custome_row {
+    width: 100%;
+}
 </style>
 <script>
   $(document).ready(function() {
@@ -292,9 +297,9 @@ button.viewallsale:hover{
     <div class="row custome_row">
         @if(isset($categories))
         @foreach($categories as $category)
-        <div class="col-md-6 mb-6">
+        <div class="">
             <div class="card1">
-                <img src="{{ asset('uploads/' . $category->gallery) }}" class="card-img-top" alt="Category Image" height="auto" width="auto">
+                <img src="{{ asset('uploads/' . $category->gallery) }}" class="card-img-top1" alt="Category Image" height="auto" width="">
                 
             </div>
         </div>
